@@ -229,8 +229,12 @@ function money(valor) {
   }).format(valor);
 }
 
-function renderStars(rating) {
+function stars(rating) {
   return Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
+}
+
+function renderStars(rating) {
+  return stars(rating);
 }
 
 const initialContact = { name: "", email: "", phone: "", message: "" };
