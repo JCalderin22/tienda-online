@@ -915,7 +915,7 @@ export default function TiendaOnlineModaPro() {
 
                     <div className="mb-3 flex items-center gap-2 text-sm text-white/70">
                       <div className="flex items-center gap-1">
-                        {renderStars(product.rating).map((filled, idx) => (
+                        {Stars(product.rating).map((filled, idx) => (
                            <Star key={idx} className={`h-4 w-4 ${filled ? "fill-white text-white" : "text-white/30"}`} />
                         ))}
                       </div>
