@@ -229,7 +229,7 @@ function money(value: number) {
   }).format(value);
 }
 
-function renderStars(rating) {
+function stars(rating: number) {
   return Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
 }
 
