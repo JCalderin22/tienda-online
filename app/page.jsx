@@ -229,7 +229,7 @@ function money(valor) {
   }).format(valor);
 }
 
-function stars(rating) {
+function renderStars(rating) {
   return Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
 }
 
@@ -915,7 +915,7 @@ export default function TiendaOnlineModaPro() {
 
                     <div className="mb-3 flex items-center gap-2 text-sm text-white/70">
                       <div className="flex items-center gap-1">
-                        {Stars(product.rating).map((filled, idx) => (
+                        {stars(product.rating).map((filled, idx) => (
                            <Star key={idx} className={`h-4 w-4 ${filled ? "fill-white text-white" : "text-white/30"}`} />
                         ))}
                       </div>
