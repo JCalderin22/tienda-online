@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { createClient } from "@supabase/supabase-js";
@@ -71,8 +73,8 @@ LO QUE TIENES QUE PONER TÚ AL FINAL:
    Aquí conectas la app con tu nube.
    Sustituye estos valores por los de tu proyecto de Supabase.
    ==================================================================== */
-const supabaseUrl = "https://TU-PROYECTO.supabase.co";
-const supabaseAnonKey = "TU_SUPABASE_ANON_KEY";
+const supabaseUrl = "https://ljokvvbzsutvibbgacnm.supabase.co";
+const supabaseAnonKey = "sb_publishable_oAqgwkl0JbQh59HdOdwOAg__psfAzny";
 
 const isSupabaseConfigured =
   supabaseUrl.startsWith("https://") &&
