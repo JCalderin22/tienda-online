@@ -222,14 +222,14 @@ const STATIC_REVIEWS = [
    --------------------------------------------------------------------
    Funciones reutilizables para formatear dinero y estrellas.
    ==================================================================== */
-function money(valor: number) {
+function money(valor) {
   return new Intl.NumberFormat("es-ES", {
     style: "currency",
     currency: "EUR",
   }).format(valor);
 }
 
-function stars(rating: number) {
+function stars(rating) {
   return Array.from({ length: 5 }, (_, i) => i < Math.round(rating));
 }
 
